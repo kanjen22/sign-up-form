@@ -1,29 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="stylesheet" href="./styles.css" />
-    </head>
 
-    <body>
-        <div class="main-left">
-            <div class="odin-logo-box">
-                <img
-                    id="odin-logo"
-                    src="./image/odin-lined.png"
-                    alt="odin-logo"
-                />
-                <div id="odin-logo-text">Odin</div>
-                <div id="left-footer">Photo by Kan-Jen on Unsplashed</div>
-            </div>
-        </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
 
-        <div class="main-right">
-            <div></div>
-            <div></div>
-            <div></div>
+<body>
+    <div class="main-left">
+        <div class="odin-logo-box">
+            <img id="odin-logo" src="./image/odin-lined.png" alt="odin-logo" />
+            <div id="odin-logo-text">Odin</div>
         </div>
-    </body>
+        <div id="left-footer">Photo by <a href="https://github.com/kanjen22/sign-up-form">Kan-Jen</a> on <a
+                href="https://unsplash.com/photos/25xggax4bSA">Unsplashed</a></div>
+    </div>
+
+    <div class="main-right">
+        <div class="header">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize
+                your deepest dremas.
+                <br>Sign up <em>now</em> to get started.<br><br>
+                You <em>know</em> you want to.
+            </p>
+        </div>
+        <div class="form-container">
+            <p>Let's do this!</p>
+            <form id="sign-up-form" action="" method="post">
+                <div>
+                    <p class="input-block">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="John" />
+                    </p>
+                    <p class="input-block">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Doe" />
+                    </p>
+                </div>
+                <div>
+                    <p class="input-block">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" placeholder="odin@***.com" />
+                    </p>
+                    <p class="input-block">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" name="phone" placeholder="***-***-****" />
+                    </p>
+                </div>
+                <div>
+                    <p class="input-block">
+                        <label for="pwd">PASSWORD*</label>
+                        <input type="password" id="pwd" name="pwd" required/>
+                    </p>
+                    <p class="input-block">
+                        <label for="pwd-confirm">CONFIRM PASSWORD*</label>
+                        <input type="password" id="pwd-confirm" name="pwd-confirm" required/>
+                    </p>
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <button type="submit" form="sign-up-form">Create Account</button>
+            <p>Already have an account?
+                <a href="./index.html"> Log in</a>
+            </p>
+        </div>
+    </div>
+</body>
+
 </html>
